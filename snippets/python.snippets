@@ -137,9 +137,30 @@ snippet gpl
 	#
 	# You should have received a copy of the GNU General Public License
 	# along with this program.  If not, see <http://www.gnu.org/licenses/>.
-	
+
 	${3:#code}
 snippet "
 	"""
 	${1:doc}
 	"""
+# New File
+snippet new
+	#!/usr/bin/python
+
+	class ${1:ClassName}:
+
+		def __init__(self):
+			pass
+
+		def ${2:run}(self):
+			pass
+
+
+	def main():
+		o = $1()
+		o.$2()
+		${3}
+
+	if __name__ == '__main__':
+		main()
+
